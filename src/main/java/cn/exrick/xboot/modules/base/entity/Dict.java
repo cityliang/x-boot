@@ -23,15 +23,27 @@ public class Dict extends XbootBaseEntity {
 
     private static final long serialVersionUID = 1L;
 
+    /**
+     * 字典名称
+     */
     @ApiModelProperty(value = "字典名称")
     private String title;
 
+    /**
+     * 字典类型
+     */
     @ApiModelProperty(value = "字典类型")
     private String type;
 
+    /**
+     * 备注
+     */
     @ApiModelProperty(value = "备注")
     private String description;
 
+    /**
+     * 排序值
+     */
     @ApiModelProperty(value = "排序值")
     @Column(precision = 10, scale = 2)
     private BigDecimal sortOrder;

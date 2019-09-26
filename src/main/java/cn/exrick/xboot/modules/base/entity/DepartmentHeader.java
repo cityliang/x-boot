@@ -22,12 +22,21 @@ public class DepartmentHeader extends XbootBaseEntity {
 
     private static final long serialVersionUID = 1L;
 
+    /**
+     * 关联部门id
+     */
     @ApiModelProperty(value = "关联部门id")
     private String departmentId;
 
+    /**
+     * 关联部门负责人
+     */
     @ApiModelProperty(value = "关联部门负责人")
     private String userId;
 
+    /**
+     * 负责人类型 默认0主要 1副职
+     */
     @ApiModelProperty(value = "负责人类型 默认0主要 1副职")
     private Integer type = CommonConstant.HEADER_TYPE_MAIN;
 }

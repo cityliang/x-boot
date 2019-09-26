@@ -18,7 +18,7 @@ spring:
     url: jdbc:mysql://127.0.0.1:3306/xboot?useUnicode=true&characterEncoding=utf-8&useSSL=false
     username: root
     # Jasypt加密 可到common-utils中找到JasyptUtil加解密工具类生成加密结果 格式为ENC(加密结果) 以下解密结果为123456
-    password: ENC(F4B0s6u9xcDw3V+P0qC4CA==)
+    password: ENC(tNzaiP1kK8fWygm9y0PXIpq5CDzIXfaq)
     type: com.alibaba.druid.pool.DruidDataSource
     driverClassName: com.mysql.jdbc.Driver
     # Druid StatViewServlet配置
@@ -30,7 +30,7 @@ spring:
         # 允许清空统计数据
         reset-enable: true
         login-username: root
-        login-password: ENC(F4B0s6u9xcDw3V+P0qC4CA==)
+        login-password: ENC(tNzaiP1kK8fWygm9y0PXIpq5CDzIXfaq)
         # IP白名单 多个逗号分隔
         allow:
         # IP黑名单

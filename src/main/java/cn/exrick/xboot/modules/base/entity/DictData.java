@@ -24,22 +24,40 @@ public class DictData extends XbootBaseEntity {
 
     private static final long serialVersionUID = 1L;
 
+    /**
+     * 数据名称
+     */
     @ApiModelProperty(value = "数据名称")
     private String title;
 
+    /**
+     * 数据值
+     */
     @ApiModelProperty(value = "数据值")
     private String value;
 
+    /**
+     * 排序值
+     */
     @ApiModelProperty(value = "排序值")
     @Column(precision = 10, scale = 2)
     private BigDecimal sortOrder;
 
+    /**
+     * 是否启用 0启用 -1禁用
+     */
     @ApiModelProperty(value = "是否启用 0启用 -1禁用")
     private Integer status = CommonConstant.STATUS_NORMAL;
 
+    /**
+     * 备注
+     */
     @ApiModelProperty(value = "备注")
     private String description;
 
+    /**
+     * 所属字典
+     */
     @ApiModelProperty(value = "所属字典")
     private String dictId;
 }

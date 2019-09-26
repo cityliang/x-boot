@@ -21,9 +21,15 @@ public class RolePermission extends XbootBaseEntity {
 
     private static final long serialVersionUID = 1L;
 
+    /**
+     * 角色id
+     */
     @ApiModelProperty(value = "角色id")
     private String roleId;
 
+    /**
+     * 权限id
+     */
     @ApiModelProperty(value = "权限id")
     private String permissionId;
 }

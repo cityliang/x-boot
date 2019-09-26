@@ -11,9 +11,7 @@ import javax.persistence.Entity;
 import javax.persistence.Table;
 import javax.persistence.Transient;
 
-/**
- * @author Exrickx
- */
+
 @Data
 @Entity
 @Table(name = "t_user_role")
@@ -23,9 +21,15 @@ public class UserRole extends XbootBaseEntity {
 
     private static final long serialVersionUID = 1L;
 
+    /**
+     * 用户唯一id
+     */
     @ApiModelProperty(value = "用户唯一id")
     private String userId;
 
+    /**
+     * 角色唯一id
+     */
     @ApiModelProperty(value = "角色唯一id")
     private String roleId;
 
